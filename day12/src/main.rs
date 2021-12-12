@@ -57,7 +57,6 @@ fn visit_nodes1<'a, 'b>(
         return 1;
     }
 
-    // for next_node in map.get(&cur_node) {
     if let Some(next_node) = map.get(cur_node) {
         for next_node in next_node.iter() {
             match next_node {
@@ -97,7 +96,6 @@ fn visit_nodes2<'a, 'b>(
         return 1;
     }
 
-    // for next_node in map.get(&cur_node) {
     if let Some(next_node) = map.get(cur_node) {
         for next_node in next_node.iter() {
             match next_node {
